@@ -1,0 +1,17 @@
+<section class='page'>
+	<section class='user-info'>
+	    <img id='user-pic' src="<%= current_user.avatar_url %>"/>
+	    <h2><%= current_user.nickname %></h2>
+	    <p><%= current_user.name %></p>
+	    <p><img src="https://cdn3.iconfinder.com/data/icons/stroke/53/Location-512.png"> <%= current_user.location %></p>
+	</section>
+		<section>
+		  	<p><%= link_to "Followed Github Users", '/followed' %></p>
+		</section>
+		<section>
+		  	<p><%= link_to "Starred Repos", '/starred_repos'  %></p>
+	  	</section>
+	  	<section>
+			<p><%= link_to "Repositories", '/repositories' %></p>
+		</section>
+</section>

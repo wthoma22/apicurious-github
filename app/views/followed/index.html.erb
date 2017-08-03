@@ -1,0 +1,10 @@
+<section class='followed-page'>
+  <h1><%= current_user.name %>'s Followed Users:</h1>
+  <% @followed.each do |follower| %>
+    <ul class='followed'>
+      <img id="followed-user" src="#">
+      <li><%= follower.user%></li>
+      <li><%= link_to "View Github Profile", "#{follower.url}"%></li>
+    </ul>
+    <% end %>
+</section>
